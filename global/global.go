@@ -38,7 +38,7 @@ func init() {
 	if err != nil {
 		panic(err)
 	}
-
+	// todo
 	print(DB)
 
 }
