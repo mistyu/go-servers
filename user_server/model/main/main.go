@@ -1,6 +1,7 @@
 package main
 
 import (
+	"go-servers/user_server/model"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
@@ -8,8 +9,6 @@ import (
 	"log"
 	"os"
 	"time"
-
-	"go-servers/model"
 )
 
 func main() {
