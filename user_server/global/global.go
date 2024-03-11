@@ -1,6 +1,7 @@
 package global
 
 import (
+	"go-servers/user_server/config"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
@@ -11,7 +12,8 @@ import (
 )
 
 var (
-	DB *gorm.DB
+	DB           *gorm.DB
+	ServerConfig config.ServerConfig
 )
 
 func init() {
