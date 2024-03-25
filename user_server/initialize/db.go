@@ -14,7 +14,7 @@ import (
 
 func InitDB() {
 	//mysqlInfo := global.ServerConfig.MysqlInfo
-	dsn := fmt.Sprintf("root:go-exercise@tcp(192.168.1.4:3306)/go_exercise_user_srv?charset=utf8mb4&parseTime=True&loc=Local")
+	dsn := fmt.Sprintf("root:nestjs-exercise@tcp(127.0.0.1:3306)/go_exercise_user_srv?charset=utf8mb4&parseTime=True&loc=Local")
 	//dsn := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=utf8mb4&parseTime=True&loc=Local", mysqlInfo.User, mysqlInfo.Password, mysqlInfo.Host, mysqlInfo.Port, mysqlInfo.Name)
 	newLogger := logger.New(
 		log.New(os.Stdout, "\r\n", log.LstdFlags),
